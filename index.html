@@ -34,7 +34,7 @@
   <meta name="twitter:description" content="Jordan Tupper is a Baton Rouge musician, bandleader, music educator, and community leader performing with Night Hog, Cover 6 Band, and Jim Standley Jazz." />
 
   <!-- =====================================================
-       SCHEMA.ORG — PERSON (structured data Google reads)
+       SCHEMA.ORG — EXPANDED PERSONA (structured data Google reads)
   ====================================================== -->
   <script type="application/ld+json">
   {
@@ -44,8 +44,13 @@
     "givenName": "Jordan",
     "familyName": "Tupper",
     "url": "https://jordantupper.com",
-    "description": "Baton Rouge musician, music educator, bandleader, and community leader with 19+ years of experience in program management and community engagement.",
+    "description": "Baton Rouge musician, music educator, bandleader, deacon, and community leader with 19+ years of experience in program management, live performance, and community engagement.",
     "jobTitle": "Musician, Music Educator, Community Leader",
+    "gender": "Male",
+    "nationality": {
+      "@type": "Country",
+      "name": "United States"
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Baton Rouge",
@@ -53,6 +58,7 @@
       "addressCountry": "US"
     },
     "sameAs": [
+      "https://jordantupper.com",
       "https://www.jordantuppermusic.com",
       "https://www.nighthogbr.com",
       "https://www.tuppertravel.com",
@@ -64,21 +70,172 @@
       "Program Management",
       "Community Engagement",
       "Live Performance",
-      "Travel Planning"
+      "Nonprofit Leadership",
+      "Digital Marketing",
+      "Travel Planning",
+      "Event Production",
+      "Strategic Planning",
+      "Classic Rock",
+      "Jazz",
+      "Funk"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "LSU Digital Marketing Certificate",
+        "credentialCategory": "Certificate",
+        "recognizedBy": {
+          "@type": "EducationalOrganization",
+          "name": "Louisiana State University",
+          "url": "https://www.lsu.edu"
+        }
+      }
+    ],
+    "award": "Grammy Music Educator Award National Quarterfinalist",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Louisiana State University",
+      "url": "https://www.lsu.edu"
+    },
+    "worksFor": [
+      {
+        "@type": "MusicGroup",
+        "name": "Night Hog",
+        "url": "https://www.nighthogbr.com",
+        "genre": ["Classic Rock", "Funk", "Soul"],
+        "description": "Baton Rouge classic rock and funk cover band led by Jordan Tupper.",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Baton Rouge",
+            "addressRegion": "LA",
+            "addressCountry": "US"
+          }
+        }
+      }
     ],
     "memberOf": [
       {
         "@type": "MusicGroup",
         "name": "Night Hog",
-        "url": "https://www.nighthogbr.com"
+        "url": "https://www.nighthogbr.com",
+        "genre": ["Classic Rock", "Funk", "Soul"]
       },
       {
         "@type": "MusicGroup",
-        "name": "Cover 6 Band"
+        "name": "Cover 6 Band",
+        "genre": ["Pop", "Rock", "Cover"]
       },
       {
         "@type": "MusicGroup",
-        "name": "Jim Standley Jazz"
+        "name": "Jim Standley Jazz",
+        "genre": ["Jazz", "Standards", "Swing"]
+      },
+      {
+        "@type": "Organization",
+        "name": "First Presbyterian Church Baton Rouge",
+        "description": "Jordan Tupper serves as a deacon at First Presbyterian Church Baton Rouge.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Baton Rouge",
+          "addressRegion": "LA",
+          "addressCountry": "US"
+        }
+      }
+    ],
+    "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "name": "Musician",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Baton Rouge, Louisiana"
+        },
+        "skills": "Live performance, band direction, classic rock, funk, jazz, cover music"
+      },
+      {
+        "@type": "Occupation",
+        "name": "Music Educator",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Baton Rouge, Louisiana"
+        },
+        "skills": "Music education, band direction, program management, curriculum development"
+      },
+      {
+        "@type": "Occupation",
+        "name": "Travel Agent",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Baton Rouge, Louisiana"
+        },
+        "skills": "Travel planning, itinerary design, group travel, leisure travel consulting"
+      }
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jordantupper.com",
+      "name": "Jordan Tupper | Official Site",
+      "description": "Official website of Jordan Tupper, Baton Rouge musician, music educator, and community leader.",
+      "url": "https://jordantupper.com"
+    }
+  }
+  </script>
+
+  <!-- =====================================================
+       SCHEMA.ORG — WEBSITE (helps Google understand site structure)
+  ====================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Jordan Tupper Official",
+    "url": "https://jordantupper.com",
+    "description": "Official website of Jordan Tupper, Baton Rouge musician, music educator, bandleader, and community leader.",
+    "author": {
+      "@type": "Person",
+      "name": "Jordan Tupper"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://jordantupper.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- =====================================================
+       SCHEMA.ORG — BREADCRUMB (helps Google understand page hierarchy)
+  ====================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Jordan Tupper",
+        "item": "https://jordantupper.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Jordan Tupper",
+        "item": "https://jordantupper.com/about.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Jordan Tupper Music",
+        "item": "https://jordantupper.com/music.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Links",
+        "item": "https://jordantupper.com/links.html"
       }
     ]
   }
@@ -323,7 +480,7 @@
         business development.
       </p>
       <p>
-        Jordan Tupper has also served as a deacon at First Presbyterian Church Baton Rouge and is active
+        Jordan Tupper is also a deacon at First Presbyterian Church Baton Rouge and is active
         in the civic and faith life of the Greater Baton Rouge area.
       </p>
     </section>
@@ -364,7 +521,8 @@
       <h2>Professional Background</h2>
       <p>
         Jordan Tupper's professional background is rooted in program management, team leadership,
-        and community development. He served as a band director at several schools, building programs from the ground up and leading award-winning
+        and community development. He served as a band director at Sycamore High School in
+        Cheatham County, Tennessee, building programs from the ground up and leading award-winning
         ensembles. He was recognized as a national quarterfinalist for the
         <strong>Grammy Music Educator Award</strong> — one of the highest honors in music education.
       </p>
