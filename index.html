@@ -1,64 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Jordan Tupper | Official Site</title>
-  <meta name="description" content="Official site of Jordan Tupper, a Baton Rouge–based music educator and professional musician. Directory of authoritative projects and websites.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- =====================================================
+       PRIMARY SEO METATAGS
+  ====================================================== -->
+  <title>Jordan Tupper | Musician, Music Educator & Community Leader | Baton Rouge, LA</title>
+  <meta name="description" content="Jordan Tupper is a Baton Rouge, Louisiana musician, music educator, bandleader, and community leader. Performer with Night Hog, Cover 6 Band, and Jim Standley Jazz. 19+ years in program management and community engagement." />
+  <meta name="author" content="Jordan Tupper" />
+  <meta name="keywords" content="Jordan Tupper, Jordan Tupper musician, Jordan Tupper Baton Rouge, Night Hog band, Night Hog Baton Rouge, Jordan Tupper music educator, Cover 6 Band, Jim Standley Jazz, Baton Rouge live music, Baton Rouge band, classic rock Baton Rouge, Jordan Tupper travel, TupperTravel" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://jordantupper.com/" />
+
+  <!-- =====================================================
+       OPEN GRAPH (Facebook, LinkedIn previews)
+  ====================================================== -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Jordan Tupper | Musician & Community Leader | Baton Rouge, LA" />
+  <meta property="og:description" content="Jordan Tupper is a Baton Rouge musician, bandleader, music educator, and community leader. Performer with Night Hog, Cover 6 Band, and Jim Standley Jazz." />
+  <meta property="og:url" content="https://jordantupper.com/" />
+  <meta property="og:site_name" content="Jordan Tupper Official" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="profile:first_name" content="Jordan" />
+  <meta property="profile:last_name" content="Tupper" />
+
+  <!-- =====================================================
+       TWITTER / X CARD
+  ====================================================== -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Jordan Tupper | Musician & Community Leader | Baton Rouge, LA" />
+  <meta name="twitter:description" content="Jordan Tupper is a Baton Rouge musician, bandleader, music educator, and community leader performing with Night Hog, Cover 6 Band, and Jim Standley Jazz." />
+
+  <!-- =====================================================
+       SCHEMA.ORG — PERSON (structured data Google reads)
+  ====================================================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Jordan Tupper",
-    "jobTitle": ["Music Educator", "Professional Musician"],
+    "givenName": "Jordan",
+    "familyName": "Tupper",
+    "url": "https://jordantupper.com",
+    "description": "Baton Rouge musician, music educator, bandleader, and community leader with 19+ years of experience in program management and community engagement.",
+    "jobTitle": "Musician, Music Educator, Community Leader",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Baton Rouge",
       "addressRegion": "LA",
       "addressCountry": "US"
     },
-    "url": "https://jordantupper.com",
     "sameAs": [
       "https://www.jordantuppermusic.com",
-      "https://www.batonrougejazz.com",
       "https://www.nighthogbr.com",
       "https://www.tuppertravel.com",
-      "https://www.linkedin.com/in/jordantupper225",
-      "https://www.instagram.com/207_to_225/",
-      "https://www.instagram.com/nighthogbr/",
-      "https://www.facebook.com/jordan.tupper/",
-      "https://www.facebook.com/nighthog.br/"
+      "https://www.linkedin.com/in/jordantupper225"
+    ],
+    "knowsAbout": [
+      "Music Education",
+      "Band Direction",
+      "Program Management",
+      "Community Engagement",
+      "Live Performance",
+      "Travel Planning"
+    ],
+    "memberOf": [
+      {
+        "@type": "MusicGroup",
+        "name": "Night Hog",
+        "url": "https://www.nighthogbr.com"
+      },
+      {
+        "@type": "MusicGroup",
+        "name": "Cover 6 Band"
+      },
+      {
+        "@type": "MusicGroup",
+        "name": "Jim Standley Jazz"
+      }
     ]
   }
   </script>
+
+  <!-- =====================================================
+       FONTS & STYLES
+  ====================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy:   #1a2744;
+      --gold:   #c9a84c;
+      --cream:  #f7f4ee;
+      --ink:    #2b2b2b;
+      --mid:    #555;
+      --light:  #999;
+      --rule:   #ddd8ce;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Source Sans 3', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.75;
+      font-size: 17px;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--navy);
+      color: var(--cream);
+      padding: 64px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(201,168,76,0.04) 40px,
+        rgba(201,168,76,0.04) 41px
+      );
+      pointer-events: none;
+    }
+    .eyebrow {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .tagline {
+      font-size: 16px;
+      color: rgba(247,244,238,0.7);
+      letter-spacing: 0.04em;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .gold-rule {
+      width: 56px;
+      height: 2px;
+      background: var(--gold);
+      margin: 28px auto 0;
+    }
+
+    /* ── LAYOUT ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    section {
+      padding: 56px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    section:last-child { border-bottom: none; }
+
+    h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    p { margin-bottom: 16px; color: var(--ink); }
+    p:last-child { margin-bottom: 0; }
+    strong { font-weight: 600; }
+
+    /* ── PROJECT GRID ── */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 8px;
+    }
+    .project-card {
+      background: #fff;
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--gold);
+      padding: 24px 26px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .project-card:hover {
+      box-shadow: 0 6px 24px rgba(26,39,68,0.1);
+      border-left-color: var(--navy);
+    }
+    .project-card .label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 6px;
+    }
+    .project-card h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .project-card p {
+      font-size: 14px;
+      color: var(--mid);
+      margin: 0;
+    }
+    .project-card .arrow {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── PILLS ── */
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .pill {
+      background: #fff;
+      border: 1px solid var(--rule);
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy);
+      letter-spacing: 0.03em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(247,244,238,0.5);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+    }
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 540px) {
+      .projects { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Jordan Tupper</h1>
-<h2>Music Educator • Professional Musician • Baton Rouge, Louisiana</h2>
+  <!-- ============================================
+       HEADER
+  ============================================= -->
+  <header>
+    <p class="eyebrow">Official Site</p>
+    <h1>Jordan Tupper</h1>
+    <p class="tagline">Musician · Music Educator · Community Leader · Baton Rouge, Louisiana</p>
+    <div class="gold-rule"></div>
+  </header>
 
-<p>
-Jordan Tupper is a Baton Rouge–based music educator and professional musician.
-This site serves as a central reference point for his official professional projects and websites.
-</p>
+  <!-- ============================================
+       MAIN CONTENT
+  ============================================= -->
+  <main>
 
-<h3>Authoritative Projects</h3>
-<ul>
-  <li><a href="https://www.jordantuppermusic.com">JordanTupperMusic.com</a> – Music education and performance</li>
-  <li><a href="https://www.batonrougejazz.com">BatonRougeJazz.com</a> – Jazz ensembles and performances</li>
-  <li><a href="https://www.nighthogbr.com">NightHogBR.com</a> – Official band website</li>
-  <li><a href="https://www.tuppertravel.com">TupperTravel.com</a> – Travel planning and consulting</li>
-</ul>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Jordan Tupper</h2>
+      <p>
+        <strong>Jordan Tupper</strong> is a Baton Rouge, Louisiana–based musician, music educator,
+        and community leader with more than 19 years of professional experience spanning live
+        performance, band direction, program management, and community engagement.
+      </p>
+      <p>
+        A versatile performer and educator, Jordan Tupper brings a rare combination of artistic
+        depth and organizational leadership to everything he does — whether on stage, in a classroom,
+        or in service of the broader Baton Rouge community. He holds an LSU Digital Marketing
+        Certificate and has applied that expertise across music promotion, nonprofit work, and
+        business development.
+      </p>
+      <p>
+        Jordan Tupper has also served as a deacon at First Presbyterian Church Baton Rouge and is active
+        in the civic and faith life of the Greater Baton Rouge area.
+      </p>
+    </section>
 
-<p>
-<a href="/links.html">Official links and media</a>
-</p>
+    <!-- MUSIC -->
+    <section id="music">
+      <h2>Music</h2>
+      <p>
+        Jordan Tupper performs regularly across Baton Rouge and the surrounding region with
+        three active musical projects, bringing live music to venues, events, and private
+        engagements throughout Louisiana.
+      </p>
 
-  <p>
+      <div class="projects">
+        <a class="project-card" href="https://www.nighthogbr.com" rel="me">
+          <div class="label">Classic Rock · Funk · Soul</div>
+          <h4>Night Hog</h4>
+          <p>Baton Rouge's high-energy classic rock and funk cover band, led by Jordan Tupper. Available for venues, corporate events, and private bookings.</p>
+          <span class="arrow">nighthogbr.com →</span>
+        </a>
+        <a class="project-card" href="https://www.jordantuppermusic.com" rel="me">
+          <div class="label">Cover Band · Live Events</div>
+          <h4>Cover 6 Band</h4>
+          <p>A versatile live band performing a wide range of crowd favorites for events and venues throughout the Baton Rouge area.</p>
+          <span class="arrow">jordantuppermusic.com →</span>
+        </a>
+        <a class="project-card" href="https://www.jordantuppermusic.com" rel="me">
+          <div class="label">Jazz · Standards</div>
+          <h4>Jim Standley Jazz</h4>
+          <p>Sophisticated jazz standards and ensemble performance, with Jordan Tupper contributing to one of Baton Rouge's premier jazz groups.</p>
+          <span class="arrow">jordantuppermusic.com →</span>
+        </a>
+      </div>
+    </section>
 
-</p>
-  
+    <!-- PROFESSIONAL -->
+    <section id="professional">
+      <h2>Professional Background</h2>
+      <p>
+        Jordan Tupper's professional background is rooted in program management, team leadership,
+        and community development. He served as a band director at several schools, building programs from the ground up and leading award-winning
+        ensembles. He was recognized as a national quarterfinalist for the
+        <strong>Grammy Music Educator Award</strong> — one of the highest honors in music education.
+      </p>
+      <p>
+        Throughout his career, Jordan Tupper has developed and led programs across education,
+        nonprofit, and private sectors, with a consistent focus on community impact, stakeholder
+        engagement, and organizational growth. He brings this same leadership to his music
+        projects and community work in Baton Rouge.
+      </p>
+
+      <div class="pills" style="margin-top:24px;">
+        <span class="pill">Program Management</span>
+        <span class="pill">Team Leadership</span>
+        <span class="pill">Music Education</span>
+        <span class="pill">Community Engagement</span>
+        <span class="pill">Digital Marketing</span>
+        <span class="pill">Nonprofit Leadership</span>
+        <span class="pill">Event Production</span>
+        <span class="pill">Band Direction</span>
+      </div>
+    </section>
+
+    <!-- TRAVEL -->
+    <section id="travel">
+      <h2>Travel Planning</h2>
+      <p>
+        Jordan Tupper is a professional travel agent serving clients through
+        <strong>TupperTravel</strong>, helping individuals, families, and groups plan memorable
+        trips. Whether you're planning a domestic getaway or an international adventure,
+        Jordan Tupper's travel expertise ensures a smooth, personalized experience.
+      </p>
+      <a class="project-card" href="https://www.tuppertravel.com" rel="me" style="margin-top:16px; display:inline-block; min-width:280px;">
+        <div class="label">Travel Planning & Consulting</div>
+        <h4>TupperTravel</h4>
+        <p>Professional travel planning services from Jordan Tupper, serving Baton Rouge and beyond.</p>
+        <span class="arrow">tuppertravel.com →</span>
+      </a>
+    </section>
+
+    <!-- CONNECT -->
+    <section id="connect">
+      <h2>Connect with Jordan Tupper</h2>
+      <p>
+        Find Jordan Tupper across his official websites and professional profiles:
+      </p>
+      <div class="projects">
+        <a class="project-card" href="https://www.jordantuppermusic.com" rel="me">
+          <div class="label">Music Portfolio</div>
+          <h4>JordanTupperMusic.com</h4>
+          <p>Jordan Tupper's music education and performance site.</p>
+          <span class="arrow">Visit →</span>
+        </a>
+        <a class="project-card" href="https://www.nighthogbr.com" rel="me">
+          <div class="label">Band Website</div>
+          <h4>NightHogBR.com</h4>
+          <p>Official site for Night Hog, Jordan Tupper's Baton Rouge classic rock band.</p>
+          <span class="arrow">Visit →</span>
+        </a>
+        <a class="project-card" href="https://www.tuppertravel.com" rel="me">
+          <div class="label">Travel Agency</div>
+          <h4>TupperTravel.com</h4>
+          <p>Travel planning and consulting services from Jordan Tupper.</p>
+          <span class="arrow">Visit →</span>
+        </a>
+        <a class="project-card" href="https://www.linkedin.com/in/jordantupper225" rel="me">
+          <div class="label">Professional Network</div>
+          <h4>LinkedIn</h4>
+          <p>Jordan Tupper's professional profile and career history on LinkedIn.</p>
+          <span class="arrow">Visit →</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+  ============================================= -->
+  <footer>
+    <p>© <span id="yr"></span> Jordan Tupper · Baton Rouge, Louisiana ·
+      <a href="https://jordantupper.com">jordantupper.com</a>
+    </p>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+
 </body>
 </html>
-
