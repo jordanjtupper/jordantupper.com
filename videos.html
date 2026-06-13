@@ -90,6 +90,34 @@
     }
     .gold-rule { width: 56px; height: 2px; background: var(--gold); margin: 28px auto 0; }
     main { max-width: 980px; margin: 0 auto; padding: 56px 24px 80px; }
+    nav.top {
+      background: var(--navy);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 52px;
+      margin: -1px -1px 0;
+    }
+    nav.top a {
+      color: rgba(247,244,238,0.7);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    nav.top a:hover, nav.top a.active { color: var(--gold); }
+    nav.top .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+    nav.top .links { display: flex; gap: 24px; flex-wrap: wrap; }
     nav.back { margin-bottom: 32px; }
     nav.back a { color: var(--gold); text-decoration: none; font-size: 14px; font-weight: 600; }
     nav.back a:hover { text-decoration: underline; }
@@ -201,6 +229,17 @@
   </style>
 </head>
 <body>
+
+  <nav class="top">
+    <a href="/" class="logo">Jordan Tupper</a>
+    <div class="links">
+      <a href="/about.html">About</a>
+      <a href="/music.html">Music</a>
+      <a href="/videos.html" class="active">Videos</a>
+      <a href="/links.html">Links</a>
+      <a href="/faq.html">FAQ</a>
+    </div>
+  </nav>
 
   <header>
     <p class="eyebrow">Live Performances</p>
